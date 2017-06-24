@@ -2,7 +2,8 @@ get_stage("before_install") %>%
   add_step(step_run_code(update.packages(ask = FALSE)))
 
 get_stage("install") %>%
-  add_step(step_run_code(remotes::install_deps(dependencies = TRUE)))
+  add_step(step_run_code(remotes::install_deps(dependencies = TRUE))) %>%
+  add_step(step_run_code(blogdown::install_hugo()))
 
 get_stage("deploy") %>%
   add_step(step_run_code(withr::with_dir("blogdown_source", blogdown::build_site())))
