@@ -6,7 +6,7 @@ get_stage("install") %>%
   add_step(step_run_code(blogdown::install_hugo()))
 
 get_stage("deploy") %>%
-  add_step(step_run_code(withr::with_dir("blogdown_source", blogdown::build_site())))
+  add_step(step_run_code({blogdown::build_site()}))
 
 if (Sys.getenv("id_rsa") != "") {
   # pkgdown documentation can be built optionally. Other example criteria:
@@ -20,5 +20,5 @@ if (Sys.getenv("id_rsa") != "") {
     add_step(step_test_ssh())
 
   get_stage("deploy") %>%
-    add_step(step_push_deploy(path = "blogdown_source/public", branch = "gh-pages"))
+    add_step(step_push_deploy(path = "public", branch = "gh-pages"))
 }
