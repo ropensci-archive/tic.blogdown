@@ -1,0 +1,4 @@
+Package: tic.blogdown
+Title: Does not matter.
+Version: 0.0.1
+Imports: blogdown
