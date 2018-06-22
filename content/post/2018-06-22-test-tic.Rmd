@@ -1,0 +1,11 @@
+---
+title: Test tic
+author: Lorenz Walthert
+date: '2018-06-22'
+slug: test-tic
+categories: []
+tags:
+  - testing
+---
+
+This is just for testing.
