@@ -12,7 +12,6 @@ Only a few files are added or changed to enable integration with _tic_:
 
 - [`tic.R`](tic.R): This file describes the CI workflow.
 - [`.travis.yml`](.travis.yml): This file translates between CI stages of Travis CI and _tic_ stages.
-- [`appveyor.yml`](appveyor.yml): This file translates between CI stages of AppVeyor and _tic_ stages.
 - [`.Rbuildignore`](.Rbuildignore): The files listed above are not part of a built R package and must be excluded.
 
 ## Set up an operational fork of this repository
