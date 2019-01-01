@@ -1,6 +1,6 @@
 # tic.blogdown
 
-[![Travis-CI Build Status](https://travis-ci.org/krlmlr/tic.blogdown.svg?branch=master)](https://travis-ci.org/krlmlr/tic.blogdown)
+[![Travis-CI Build Status](https://travis-ci.org/ropenscilabs/tic.blogdown.svg?branch=master)](https://travis-ci.org/ropenscilabs/tic.blogdown)
 
 A minimal example [blogdown](https://bookdown.org/yihui/blogdown/) created and uploaded by _tic_, and hosted by Netlify.
 _tic_ is an R package for CI-agnostic workflow definitions for various R projects. 
