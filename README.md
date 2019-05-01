@@ -1,7 +1,7 @@
 # tic.blogdown
 
 [![Travis-CI Build Status](https://travis-ci.org/ropenscilabs/tic.blogdown.svg?branch=master)](https://travis-ci.org/ropenscilabs/tic.blogdown)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ropenscilabs/tic.blogdown?branch=master&svg=true)](https://ci.appveyor.com/project/ropensci/tic.blogdown)  
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/ropenscilabs/tic.blogdown?branch=master&svg=true)](https://ci.appveyor.com/project/ropensci/tic.blogdown)
 [![Coverage Status](https://codecov.io/gh/ropenscilabs/tic.blogdown/branch/master/graph/badge.svg)](https://codecov.io/github/ropenscilabs/tic.blogdown?branch=master)
 
 A minimal example [blogdown](https://bookdown.org/yihui/blogdown/) created and uploaded by _tic_, and hosted by Netlify.
