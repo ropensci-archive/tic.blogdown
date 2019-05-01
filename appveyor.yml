@@ -11,15 +11,14 @@ install:
   - ps: Bootstrap
   - cmd: Rscript -e "writeLines('options(repos = \'https://cloud.r-project.org\')', '~/.Rprofile')"
   - cmd: Rscript -e "getOption('repos')"
-  - cmd: Rscript -e "if (!requireNamespace('remotes'), quietly = TRUE) install.packages('remotes')"
-  - cmd: Rscript -e "if (!requireNamespace('curl'), quietly = TRUE) install.packages('curl')"
-  - cmd: Rscript -e "if (!requireNamespace('tic'), quietly = TRUE) remotes::install_github('ropenscilabs/tic')"
+  - cmd: Rscript -e "if (!requireNamespace('remotes', quietly = TRUE) install.packages('remotes')"
+  - cmd: Rscript -e "if (!requireNamespace('curl', quietly = TRUE) install.packages('curl')"
+  - cmd: Rscript -e "if (!requireNamespace('tic', quietly = TRUE) remotes::install_github('ropenscilabs/tic')"
   - cmd: Rscript -e "tic::prepare_all_stages()"
   - cmd: Rscript -e "tic::before_install()"
 
 cache:
 - C:\RLibrary\
-
 
 before_build: Rscript -e "tic::before_install()"
 build_script: Rscript -e "tic::install()"
@@ -42,8 +41,6 @@ on_finish: Rscript -e "tic::after_script()"
 environment:
   GITHUB_PAT:
     secure: VXO22OHLkl4YhVIomSMwCZyOTx03Xf2WICaVng9xH7gISlAg8a+qrt1DtFtk8sK5
-  id_rsa:
-    secure: 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
 
 artifacts:
   - path: '*.Rcheck\**\*.log'
