@@ -168,7 +168,7 @@ $highlight: (
     'background':  #f7f8f8,
     'font-size':   1.4rem,
     'border':      1px solid,
-    'line-height': 1.3em
+    'line-height': 2.3rem
 );
 
 // Highlight colors
@@ -219,6 +219,7 @@ $main-content: (
     'max-width':          750px,
     'padding-right-left': 20px,
 );
+$main-width: map-get($main-content, max-width) + map-get($main-content, padding-right-left) * 2;
 
 // Mardown
 // These variables are use to have headings smaller than general headings title

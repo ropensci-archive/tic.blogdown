@@ -41,8 +41,9 @@
         }
     }
     // Used to animate the sidebar (pushed effect)
+    @include prefix(transition, 'margin-left 0.5s', 'webkit' 'moz');
     &.pushed {
-        @include prefix(transform, translate3d(#{map-get($sidebar, md-screen-width)}, 0, 0), 'webkit' 'moz');
+        margin-left: #{map-get($sidebar, md-screen-width)};
     }
 }
 
@@ -103,22 +104,26 @@
         }
     }
     // Used to animate the sidebar (pushed effect)
+    @include prefix(transition, 'margin-left 0.5s', 'webkit' 'moz');
     &.pushed {
-        @include prefix(transform, translate3d(#{map-get($sidebar, lg-screen-width)}, 0, 0), 'webkit' 'moz');
+        margin-left: #{map-get($sidebar, lg-screen-width)};
     }
 }
 
 /// Mixin helper to display the sidebar in large size
 @mixin sidebar-xlg {
-    width:      map-get($sidebar, xlg-screen-width);
-    box-sizing: border-box;
-    padding:    0 80px;
+    width:           map-get($sidebar, xlg-screen-width);
+    display:         -webkit-flex;
+    display:         -webkit-box;
+    display:         -moz-box;
+    display:         -ms-flexbox;
+    display:         flex;
+    flex-direction:  column;
+    justify-content: center;
+
     .sidebar-container {
-        position:          relative;
-        top:               50%;
-        transform:         translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -moz-transform:    translateY(-50%);
+        position: relative;
+        padding:  0 80px;
     }
     // Author information
     .sidebar-profile {
@@ -191,7 +196,8 @@
         }
     }
     // Used to animate the sidebar (pushed effect)
+    @include prefix(transition, 'width 0.5s, margin-left 0.5s', 'webkit' 'moz');
     &.pushed {
-        @include prefix(transform, translate3d(#{map-get($sidebar, xlg-screen-width)}, 0, 0), 'webkit' 'moz');
+        margin-left: #{map-get($sidebar, xlg-screen-width)};
     }
 }
