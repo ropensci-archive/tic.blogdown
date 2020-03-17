@@ -1,5 +1,4 @@
 theme = "hugo-lithium"
-themes = "hugo-lithium"
 baseurl = "https://upbeat-wilson-7febb6.netlify.com/"
 title = "Hugo Themes"
 paginate = 3
