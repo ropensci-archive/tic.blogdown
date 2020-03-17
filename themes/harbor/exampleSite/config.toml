@@ -1,25 +1,22 @@
-themes = "harbor"
-baseurl = "https://ropenscilabs.github.io/"
+baseURL = "https://gohugo.io"
 title = "Hugo Themes"
+author = "Steve Francia"
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-googleAnalytics = "UA-XXXXXXXX-XX" # Optional
-
 [Author]
-  name = "Hugo Author"
+  name = "hugo author"
 
 [outputs]
-  section = ["JSON", "HTML"]
+    section = ["JSON", "HTML"]
 
 [[params.nav]]
   identifier = "about"
   name = "About"
-  icon = "fas fa-userfa-lg"
+  icon = "fas fa-user fa-lg"
   url = "/about/"
   weight = 3
 
@@ -37,8 +34,12 @@ googleAnalytics = "UA-XXXXXXXX-XX" # Optional
   url = "search"
   weight = 3
 
-[params.logo]
-  url = "icon.png"
-  width = 50
-  height = 50
-  alt = "Logo"
+[params]
+  mainSections = ["post"]
+  favicon = "favicon.ico"
+
+  [params.logo]
+    url = "icon.png"
+    width = 50
+    height = 50
+    alt = "Logo"
