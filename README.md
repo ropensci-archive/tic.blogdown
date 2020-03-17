@@ -2,7 +2,6 @@
 
 [![Travis-CI Build Status](https://travis-ci.org/ropenscilabs/tic.blogdown.svg?branch=master)](https://travis-ci.org/ropenscilabs/tic.blogdown)
 [![Build status](https://ci.appveyor.com/api/projects/status/eyq1syaite6adkbe?svg=true)](https://ci.appveyor.com/project/ropenscilabs/tic-blogdown)
-[![Coverage Status](https://codecov.io/gh/ropenscilabs/tic.blogdown/branch/master/graph/badge.svg)](https://codecov.io/github/ropenscilabs/tic.blogdown?branch=master)
 
 A minimal example [blogdown](https://bookdown.org/yihui/blogdown/) created and uploaded by {tic}, and hosted by Netlify.
 {tic} is an R package for CI-agnostic workflow definitions for various R projects.
