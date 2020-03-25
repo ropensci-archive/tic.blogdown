@@ -1,5 +1,5 @@
 theme = "hugo-lithium"
-baseurl = "https://upbeat-wilson-7febb6.netlify.com/"
+baseurl = "https://ropenscilabs.github.io/tic.blogdown/"
 title = "Hugo Themes"
 paginate = 3
 languageCode = "en"
