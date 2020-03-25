@@ -12,8 +12,8 @@ if (ci_on_travis() && ci_has_env("BUILD_BLOGDOWN")) {
 
   if (ci_get_branch() == "master") {
     get_stage("deploy") %>%
-      add_step(step_setup_push_deploy(path = "docs", branch = "gh-pages",
+      add_step(step_setup_push_deploy(path = "public", branch = "gh-pages",
         orphan = TRUE)) %>%
-      add_step(step_do_push_deploy(path = "docs"))
+      add_step(step_do_push_deploy(path = "public"))
   }
 }
