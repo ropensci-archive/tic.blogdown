@@ -6,8 +6,7 @@
 A minimal example [blogdown](https://bookdown.org/yihui/blogdown/) created and uploaded by {tic}, and hosted by Netlify.
 {tic} is an R package for CI-agnostic workflow definitions for various R projects.
 
-To deploy the site, we recommend to use [Netlify](https://bookdown.org/yihui/blogdown/netlify.html).
-The CI approach presented here ensures that the site is build properly but does not do any hosting.
+The site is deployed to the `gh-pages` branch and served via GitHub Pages.
 
 See its [documentation](https://docs.ropensci/tic) for more information.
 
